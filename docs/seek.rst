@@ -6,18 +6,18 @@ SEEK - Search-Based Exploration of Expression Compendium
 What is SEEK?
 =============
 SEEK is a computational gene coexpression search engine, which provides biologists with
-a way to navigate the massive expression compendiums in 6 organisms: human, mouse, worm, fly, zebrafish, and yeast. 
-SEEK returns a robust ranking of genes coexpressed with the user's query genes across hundreds of thousands of 
-expression experiments. 
+a way to navigate the massive expression compendiums in 6 organisms: human, mouse, worm, fly, zebrafish, and yeast.
+SEEK returns a robust ranking of genes coexpressed with the user's query genes across hundreds of thousands of
+expression experiments.
 Additionally, it prioritizes thousands of expression datasets by the query genes' coexpression signal in each dataset.
 Datasets where the query genes are more strongly coexpresesed will be prioritized, and contribute more to the ranking of
-coexpressed genes. The unique strengths of SEEK include its support for multi-gene query and cross-platform analysis, 
+coexpressed genes. The unique strengths of SEEK include its support for multi-gene query and cross-platform analysis,
 as well as its rich visualization features.
 
 
 Cross-organism, cross platform, coexpression search
 ----------------------------------------------------
-For each gene query, SEEK is automatically and simultaneously run in all six organisms. Users can explore conserved 
+For each gene query, SEEK is automatically and simultaneously run in all six organisms. Users can explore conserved
 functional enrichments across organisms, and compare the coexpression patterns of the query genes across organisms.
 
 
@@ -55,11 +55,11 @@ Starting a search
 
 Enter a query as gene symbols or entrez IDs, separated by spaces or commas (see the Figure below).
 A query can be two or more genes (up to ~150). A key assumption of SEEK is that the query genes
-should be, to an extent, functionally related. For example, the query should be biologically coherent 
+should be, to an extent, functionally related. For example, the query should be biologically coherent
 and represent a common biological process, function, module, or physical interactions. In many cases,
 researchers query genes discovered from a differential expression analysis.
 
-.. figure:: docs/img/SEEK_Getting_Started_1.png
+.. figure:: img/SEEK_Getting_Started_1.png
     :width: 800px
 
     SEEK query component
@@ -71,7 +71,7 @@ Expression is the default view of the search results (shown below). The
 query genes and their coexpressed neighbor genes are displayed, and a
 side-by-side comparison across datasets is shown.
 
-.. figure:: docs/img/SEEK_Case_Study_Hedgehog.png
+.. figure:: img/SEEK_Case_Study_Hedgehog.png
     :width: 800px
 
     SEEK expression view
@@ -90,7 +90,7 @@ You may search the dataset titles and add or remove datasets to compare.
 The titles of the selected datasets appear in an expandable
 `accordion` component (see below), which shows the dataset details when opened.
 
-.. figure:: docs/img/SEEK_Getting_Started_2.png
+.. figure:: img/SEEK_Getting_Started_2.png
     :width: 800px
 
     SEEK expanded dataset panel
@@ -107,7 +107,7 @@ to gene function preservation. We also show term enrichment across the
 prioritized datasets to better understand the different experimental contexts
 in each model organism that are driving the observed results.
 
-.. figure:: docs/img/SEEK-Enrichment-Flowchart.png
+.. figure:: img/SEEK-Enrichment-Flowchart.png
     :width: 800px
 
     Flow chart description of SEEK enrichment
@@ -129,12 +129,12 @@ of shared GO terms derived from the gene rankings and shared terms covered by
 the dataset rankings (see Figure: Ortholog Ranks and Figure: Gene and dataset
 enrichments).
 
-.. figure:: docs/img/SEEK-Ortholog_Ranks.png
+.. figure:: img/SEEK-Ortholog_Ranks.png
     :width: 800px
 
     SEEK ortholog ranks
 
-.. figure:: docs/img/SEEK-Gene_and_Dataset_Enrichment.png
+.. figure:: img/SEEK-Gene_and_Dataset_Enrichment.png
     :width: 800px
 
     SEEK gene and dataset enrichments
@@ -208,7 +208,7 @@ in the accordion to learn more about the study.
 `Click here <https://humanbase.io/seek/result?bodyTag=fb4d773f-d894-5cfe-944b-dc5be0206a5c>`_
 to interact with this example in a new browser tab.
 
-.. figure:: docs/img/SEEK_Case_Study_Hedgehog.png
+.. figure:: img/SEEK_Case_Study_Hedgehog.png
     :width: 800px
 
     Hh query GLI1 GLI2 PTCH1. The top 3 datasets are automatically selected.
@@ -423,7 +423,7 @@ can check the produced list where an interesting dataset is ranked relative to
 the query.
 
 Uses a clustering based evaluation
----------------------------------
+----------------------------------
 
 In order to assess coexpression relationships between query genes,
 clustering (or correlation) based measures are defined to individually
@@ -586,7 +586,7 @@ Computing the final gene score uses the dataset weights (previously discussed in
 this FAQ) in order to reflect the coexpressions that are located in the top
 relevant datasets. For each gene :math:`g`, the final score is:
 
-.. image:: docs/img/SEEK_fg_formula.png
+.. image:: img/SEEK_fg_formula.png
     :width: 300px
 
 .. math::
@@ -600,7 +600,7 @@ relevant datasets. For each gene :math:`g`, the final score is:
 Where :math:`D` is the set of datasets that contain :math:`g`. In the equation,
 the score of :math:`g` in each dataset :math:`s_d(g)`, is given by:
 
-.. image:: docs/img/SEEK_sd_g_formula.png
+.. image:: img/SEEK_sd_g_formula.png
     :width: 300px
 
 .. math::
@@ -670,7 +670,7 @@ terms filtered by that keyword will be shown. You can then select as many terms
 of interest as you like. Only datasets from those terms will be considered when
 you submit the query.
 
-.. image:: docs/img/SEEK_Getting_Started_3.png
+.. image:: img/SEEK_Getting_Started_3.png
     :width: 800px
 
 
