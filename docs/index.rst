@@ -40,7 +40,6 @@ Help topics
    :maxdepth: 2
    :glob:
 
-   usage
    functional-networks
    tissue-networks
    modules
