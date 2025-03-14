@@ -1,0 +1,8 @@
+# IntelliJ IDEA files and directories
+.idea/*
+
+# Output directories
+/out/*
+
+# macOS system files
+.DS_Store
