@@ -42,9 +42,9 @@ coexpression network, and the search result will reflect genes that are more spe
 We tested this on a group of 344 GO Biological Process slim terms, retrieving co-annotated genes from each slim term.
 This hubbiness correction brought improvement to 219 GO terms, with the average performance improvement being 124%.
 
-In the other 125 GO terms where performance did not significantly improve or perform worse, the correction procedure
+In the other 125 GO terms where performance did not significantly improve or performed worse, the correction procedure
 was able to retain >83% of the original performance. The performance is measured in terms of the precision at 10%
-recall. In another evaluation, we sought to evaluate whether SEEK successfully downweight frequently retrieved genes.
+recall. In another evaluation, we sought to evaluate whether SEEK successfully downweighted frequently retrieved genes.
 
 
 Getting Started
@@ -57,7 +57,7 @@ Enter a query as gene symbols or entrez IDs, separated by spaces or commas (see 
 A query can be two or more genes (up to ~150). A key assumption of SEEK is that the query genes
 should be, to an extent, functionally related. For example, the query should be biologically coherent
 and represent a common biological process, function, module, or physical interactions. In many cases,
-researchers query genes discovered from a differential expression analysis.
+researchers query genes discovered from a differential expression analysis or a screen.
 
 .. figure:: img/SEEK_Getting_Started_1.png
     :width: 800px
