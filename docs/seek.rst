@@ -422,8 +422,8 @@ given query genes and based on which exhibits significant coexpression. Users
 can check the produced list where an interesting dataset is ranked relative to
 the query.
 
-Uses a clustering based evaluation
-----------------------------------
+Understand coexpression relationship between query genes and dataset rankings
+-----------------------------------------------------------------------------
 
 In order to assess coexpression relationships between query genes,
 clustering (or correlation) based measures are defined to individually
@@ -431,12 +431,12 @@ evaluate datasets. If query genes are strongly clustered more so than
 random groups of genes in each dataset, this indicates that relevant
 biological processes are active and the dataset is relevant.
 
-SEEK provides coexpression P-values for all datasets in the compendium.
+SEEK calculates coexpression P-values for all datasets in the compendium.
 The measure is based on rank-biased version of Pearson correlation (see
 publication, referred to as the "dataset weight")
 
 The clustering of genes offers a lot of information about the heterogeneity
-of query gene-set in the cancer samples. SEEK calculates, and furthermore
+of query gene-set. SEEK calculates, and furthermore
 visualizes how query genes are coexpressed with each other in the
 Expression Viewer. With this viewer, we can intuitively interpret large
 queries (ie. 10 query genes or more) where it is impossible to know what
@@ -459,7 +459,7 @@ can you do to improve your results?
    of datasets is listed next to each entry in the `Dataset filter`.
 
    If you don't know which tissue to refine to, because you don't know which
-   tissues they are expressed in. We suggest running the query without
+   tissues they are expressed in, we suggest running the query without
    selecting any tissues. The resulting top genes
    tissue your query is expressed (this works for both single gene and
    multi-gene query).
@@ -470,7 +470,7 @@ can you do to improve your results?
    not allow SEEK to accurately prioritize datasets. In this case,
    we suggest expanding your query with functionally related genes (such
    as those that physically interact with the query). This may improve the
-   result. Use **STRING**, **IMP** to get these genes. Along this line, another
+   result. For human gene queries use GIANT at HumanBase (`https://humanbase.io/`). For non-human organisms, use **STRING** or **IMP** to get additional genes. Along this line, another
    popular approach is to add tissue or disease specific genes to your query.
 
    **Large query** - use visualization based evaluation discussed above to
