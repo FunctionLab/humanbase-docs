@@ -41,7 +41,7 @@ Output
 Sequence classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Sei framework predicts 40 sequence class scores, covering a wide range of regulatory activities such as cell-type-specific enhancers and promoters, as well as 21,907 chromatin profiles for any DNA sequence.
+The Sei framework predicts 40 sequence class scores, covering a wide range of regulatory activities such as cell-type-specific enhancers and promoters, as well as 21,907 chromatin profiles for any DNA sequence. A full description of how Sei sequence scores are computed can be found in the `Sei paper (2022) <https://www.nature.com/articles/s41588-022-01102-2>`_.
 
 To help interpretation, we grouped sequence classes into groups including P (Promoter), E (Enhancer), CTCF (CTCF-cohesin binding), TF (TF binding), PC (Polycomb-repressed), HET (Heterochromatin), TN (Transcription), and L (Low Signal) sequence classes. Please refer to our manuscript for a more detailed description of the sequence classes.
 
