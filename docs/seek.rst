@@ -431,9 +431,17 @@ evaluate datasets. If query genes are strongly clustered more so than
 random groups of genes in each dataset, this indicates that relevant
 biological processes are active and the dataset is relevant.
 
-SEEK calculates coexpression P-values for all datasets in the compendium.
-The measure is based on rank-biased version of Pearson correlation (see
-publication, referred to as the "dataset weight")
+SEEK calculates coexpression P-values for all datasets in the compendium internally.
+These p-values contribute to determining dataset significance and weights, but are not 
+displayed as standalone values in the user interface. Users primarily interact with 
+dataset weights and gene co-expression z-scores. The measure is based on rank-biased 
+version of Pearson correlation (see publication, referred to as the "dataset weight").
+
+For **gene term enrichment** and **dataset term enrichment** results, statistical 
+significance (p-values and false discovery rates (q-values)) are provided. These 
+values are displayed in **tooltips** when you hover over the individual cells within 
+the enrichment heatmaps (e.g., in the 'Gene Term Enrichment Z-Score' and 'Dataset 
+Enrichment Z-Score' visualizations).
 
 The clustering of genes offers a lot of information about the heterogeneity
 of query gene-set. SEEK calculates, and furthermore
@@ -652,6 +660,22 @@ text-mining mines for controlled vocabulary terms within dataset description and
 description texts associated with the dataset. In manual curation, we review and correct
 the mappings for those commonly mismapped keywords.
 
+Where can I find p-values in SEEK results?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SEEK calculates several types of p-values:
+
+- For **Gene Term Enrichment** and **Dataset Term Enrichment**, the associated p-values 
+  and false discovery rates (q-values) *are* displayed! You can find them in the **tooltips** 
+  when you hover over the cells in the respective enrichment heatmaps. These indicate the 
+  statistical significance of the enrichment for a specific term in a gene set or dataset.
+  
+- Regarding the 'coexpression P-values for all datasets' mentioned in older documentation: 
+  these specific dataset-level p-values are calculated internally for dataset weighting 
+  and significance, but they are not currently displayed as standalone values in the user 
+  interface or included in downloadable files. The UI primarily focuses on presenting 
+  z-scores for visual interpretation and enrichment results.
+
 
 Usage questions
 ---------------
@@ -680,7 +704,9 @@ How do I get the complete list of genes or datasets prioritized to the given que
 On the SEEK expression result page, next to the heatmap legend there is a button
 labeled `Download`. Clicking on this button will allow you to choose between
 downloading a CSV of either the genes ranked by coexpression score or datasets
-ranked by query relevance (aka weight).
+ranked by query relevance (aka weight). Downloaded result files include z-scores 
+and dataset weights. P-values and q-values for enrichment are **not** included 
+in the current downloadable data files.
 
 How can I check the rank for a gene or dataset of interest?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
