@@ -48,4 +48,5 @@ Help topics
    beluga
    expecto
    clever
+   in-silico-mutagenesis
    citations
