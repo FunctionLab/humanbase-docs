@@ -14,10 +14,10 @@ Jian Zhou, Chandra L. Theesfeld, Kevin Yao, Kathleen M. Chen, Aaron K. Wong, and
 
 Output
 ------
-Regulatory feature scores:
+**Regulatory feature scores:**
 The z-score, e-value, and probability diffs are computed as for the `DeepSEA (Beluga) model <https://humanbase.readthedocs.io/en/latest/beluga.html#regulatory-feature-scores>`_.
 
-ExPecto expression effect: 
+**ExPecto expression effect:** 
 The ExPecto expression effect is the difference of predicted expression levels for reference and alternative allele. (See the `Expecto paper (2018) <https://www.nature.com/articles/s41588-018-0160-6>`_)
 
 Download
