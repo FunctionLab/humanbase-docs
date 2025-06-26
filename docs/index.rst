@@ -40,7 +40,6 @@ Help topics
    :maxdepth: 2
    :glob:
 
-   usage
    functional-networks
    tissue-networks
    modules
@@ -48,4 +47,5 @@ Help topics
    sei
    beluga
    expecto
+   clever
    citations

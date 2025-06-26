@@ -1,10 +1,11 @@
 
-=======
+=========
 ExPectoSC
-=======
+=========
 
 Introduction
 ------------
+
 ExPectoSC is a framework for `ab initio` sequence-based prediction of mutation gene expression effects for primary human cell types. With this web interface, we provide an explorer of cell type-specific expression effect predictions. The current release contains all ClinVar variants within +/- 20kb of the representative TSS of a gene. We use 1000 Genomes variant effects predictions for z-score normalization. No effect threshold was employed for the current release of the data.
 
 The code for predicting expression effects for human genome variants and training new expression models is available at this `github repository <https://github.com/ksenia007/ExPectoSC>`_.
@@ -14,7 +15,7 @@ The ExPectoSC framework is described in the following manuscript:
 Ksenia Sokolova, Chandra L. Theesfeld, Aaron K. Wong, Zijun Zhang, Kara Dolinski and Olga G. Troyanskaya, Atlas of primary cell-type specific sequence models of gene expression and variant effects, Submitted, 2023
 
 Website overview
-------------
+----------------
 After user enters a gene name, the Primary View is returned showing the predictions for the pre-computed variants for the region (includes 1000G and ClinVar variants). The variants are oriented so that the lowest chromosomal coordinate for the gene region is on the left side of the screen. The heatmap colors represent the max effect cell type prediction within the organ system. Rows are grouped organ systems, and columns are variant locations:
 
 .. image:: img/expectosc_img1.png
