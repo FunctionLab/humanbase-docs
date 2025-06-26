@@ -49,6 +49,10 @@ Drop-down menu in the upper left corner allows users to select multiple organ ce
 
 
 
+Output
+------
+To analyze effect of the variants we get predictions for the reference and alternative sequences and compare the difference. To compare the predictions between the cell-types, we normalized predictions of variant sets to those of 1000 Genomes variants by using the Z-scores computed per cell-type. As a rough guideline, z-scores of above ~3-5 represent more reliable predictions. See the `ExPectoSC paper (2023) <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_.
+
 Download
 --------
 `ClinVar scaled non-coding predictions <https://humanbase.s3.us-west-2.amazonaws.com/clever/clinvar_1000G_final_nc_all_info.csv>`_ 
@@ -62,5 +66,5 @@ Method Details
 --------------
 ExPectoSC is a modular framework, that uses regularized linear module upon deep convolutional network model of chromatin profifiling effects to predict cell type specific expression. The framework is capable of predicting expression levels directly from sequence and is sensitive to the sequence variations.
 
-The chromatin predictions were computed using a DeepSEA "Beluga" model, using sliding window approach of 2000bp width with 200bp step, for the 40kb region surrounding the TSS. Exponential condense function is then used to reduce the dimensionality of the data before using it in the module 2. To analyze effect of the variants we get predictions for the reference and alternative sequences and compare the difference. 
+The chromatin predictions were computed using a DeepSEA "Beluga" model, using sliding window approach of 2000bp width with 200bp step, for the 40kb region surrounding the TSS. Exponential condense function is then used to reduce the dimensionality of the data before using it in the module 2. 
 
