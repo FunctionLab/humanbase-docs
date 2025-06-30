@@ -5,15 +5,22 @@ Seqweaver
 Introduction
 ------------
 
-Seqweaver is a deep learning model for predicting chromatin features and regulatory effects from DNA sequences. It is part of the family of sequence-based models that includes Sei and Beluga (DeepSEA).
+Seqweaver is a deep learning framework designed to predict how genetic variants affect post-transcriptional RNA-binding protein (RBP) interactions. The model is trained on RBP-RNA interaction data
+obtained from CLIP-seq experiments. Seqweaver consists of 232 RBP models spanning 88 distinct RBPs, and can predict the impact of genetic variants (including variants never seen in genomic
+databases) at single-nucleotide resolution.
+
+Seqweaver is described in:
+Park CY, Zhou J, Wong AK, Chen KM, Theesfeld CL, Darnell RB, Troyanskaya OG. Genome-wide landscape of RNA-binding protein target site dysregulation reveals a major impact on psychiatric disorder
+risk. Nat Genet. 2021 Feb;53(2):166-173.
 
 Input
 -----
 
 .. |bp_length| replace:: 1000
-.. |bed_example| replace:: ``chr1 109817091 109818090``
+.. |bed_example| replace:: ``chr1 109817090 109818090``
 
 .. include:: _includes/common-input-formats.rst
+
 
 A minimal FASTA example of 4 sequences is shown below. Each sequence entry consists of:
 
@@ -84,7 +91,27 @@ Example::
 Output
 ------
 
-The output format and interpretation will depend on the specific implementation and use case. Seqweaver predictions include chromatin feature probabilities and regulatory effect scores similar to other models in the DeepSEA family.
+Variant scores
+~~~~~~~~~~~~~~
+
+**Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See Zhou et. al, 2019). The predicted DIS probabilities are then converted into 'DIS e-values', computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
+
+.. math::
+   -\log_{10}(DIS\ e-value_{feature})
+
+**Mean -log e-value:** For each predicted regulatory feature effect (:math:`abs(p_{alt}-p_{ref})`) of a variant, we calculate a 'feature e-value' based on the empirical distribution of that feature’s effects among gnomAD variants (see Molecular-level biochemical effects prediction: e-value). The MLE score of a variant is
+
+.. math::
+   \sum{-\log_{10}(e-value_{feature})}/N
+
+Molecular-level biochemical effects prediction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature.
+
+**E-value:** E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature’s effect (:math:`abs(p_{alt}-p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
+
+**Probability diffs:** The difference between the the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
 
 See also
 --------
