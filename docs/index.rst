@@ -46,6 +46,7 @@ Help topics
    netwas
    sei
    beluga
+   seqweaver
    expecto
    clever
    in-silico-mutagenesis
