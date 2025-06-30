@@ -11,6 +11,11 @@ Check the Read the Docs build status and documentation: https://app.readthedocs.
 
 The live documentation is available at: https://humanbase.readthedocs.io/
 
+**Preview Builds:** Read the Docs can build documentation for pull requests, but this needs to be triggered. To preview your changes before merging:
+
+1. Create a pull request from your branch to ``master``
+2. Go to https://app.readthedocs.org/projects/humanbase/ to trigger a build
+
 Quick Start
 -----------
 
@@ -61,22 +66,22 @@ Documentation Structure
 The documentation is organized as follows:
 
 * ``docs/`` - Main documentation directory
-  
+
   * ``index.rst`` - Main table of contents and entry point
   * ``conf.py`` - Sphinx configuration file
   * ``requirements.txt`` - Python dependencies for building docs
   * ``img/`` - Images and diagrams used in documentation
   * Tool-specific documentation:
-    
+
     * ``sei.rst`` - Sei/DeepSEA sequence-based predictions
     * ``beluga.rst`` - DeepSEA (Beluga) chromatin profile predictions
     * ``expecto.rst`` - ExPecto expression predictions
     * ``clever.rst`` - CLEVER variant effect predictions
     * ``netwas.rst`` - NetWAS network-based association studies
     * ``in-silico-mutagenesis.rst`` - In silico mutagenesis analysis
-    
+
   * Network documentation:
-    
+
     * ``functional-networks.rst`` - Functional gene networks
     * ``tissue-networks.rst`` - Tissue-specific networks
 
