@@ -12,4 +12,4 @@ We support three types of input: VCF, FASTA, BED. If you want to predict effects
   - **Note**: This padding behavior is not recommended. N's were extremely rare in training data (only appearing in assembly gaps), and the model has not been evaluated with artificially padded sequences
   - **Strong recommendation**: Always provide sequences of exactly |bp_length|\ bp by including genomic flanking sequences
 
-**BED format** provides another way to specify sequences in human reference genome. The BED input should specify |bp_length|\ bp-length regions. A minimal example is |bed_example|. The three columns are chromosome, start position, and end position.
+**BED format** provides another way to specify sequences in human reference genome. A minimal example is |bed_example|. The three columns are chromosome, start position, and end position.
