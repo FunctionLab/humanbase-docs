@@ -7,7 +7,7 @@ Introduction
 
 Perform "In silico saturated mutagenesis" (ISM) analysis to discover informative sequence features within any sequence. Specifically, it performs computational mutation scanning to assess the effect of mutating every base of the input sequence on chromatin feature predictions. This method for context-specific sequence feature extraction takes advantage of DeepSEA's ability to utilize flanking context sequences information.
 
-Note that ISM only accepts a sequence (FASTA file) as input.
+Note that ISM only accepts a sequence (FASTA file) as input. The input FASTA file should be 2000 base pairs long.
 
 ISM outputs effects for each of three possible substitutions of all 2000 bases, across all chromatin features.
 

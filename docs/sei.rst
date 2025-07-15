@@ -12,7 +12,7 @@ Sei is described in the following manuscript: Kathleen M. Chen, Aaron K. Wong, O
 The Sei code repository can be found `here <https://github.com/FunctionLab/sei-framework>`_.
 
 For older DeepSEA models see:
-:doc:`beluga` (2019)
+:doc:`beluga` (2018)
 
 
 Input

@@ -27,7 +27,7 @@ Tissue-specific networks provide a new means to generate hypotheses related to t
 
 :doc:`sei` and :doc:`beluga`
 --------------------------------
-Beluga (a `2019 update <https://www.nature.com/articles/s41588-018-0160-6>`_ to the `DeepSEA framework <https://www.nature.com/articles/nmeth.3547>`_) is a deep learning-based algorithmic framework for predicting the chromatin effects of sequence alterations with single nucleotide sensitivity. Beluga can accurately predict the epigenetic state of a sequence, including transcription factors binding, DNase I sensitivities and histone marks in multiple cell types, and further utilize this capability to predict the chromatin effects of sequence variants and prioritize regulatory variants.
+Beluga (a `2018 update <https://www.nature.com/articles/s41588-018-0160-6>`_ to the `DeepSEA framework <https://www.nature.com/articles/nmeth.3547>`_) is a deep learning-based algorithmic framework for predicting the chromatin effects of sequence alterations with single nucleotide sensitivity. Beluga can accurately predict the epigenetic state of a sequence, including transcription factors binding, DNase I sensitivities and histone marks in multiple cell types, and further utilize this capability to predict the chromatin effects of sequence variants and prioritize regulatory variants.
 
 Sei (`Chen et al., 2022 <https://www.nature.com/articles/s41588-022-01102-2>`_) provides a global map from any sequence to regulatory activities, as represented by 40 sequence classes by integrating predictions for 21,907 chromatin profiles.
 
