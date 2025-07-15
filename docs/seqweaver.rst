@@ -68,4 +68,4 @@ Molecular-level biochemical effects prediction
 See also
 --------
 * :doc:`sei` - Latest chromatin and regulatory impact model with 4096bp input sequences
-* :doc:`beluga` - 2019 DeepSEA model with 2000bp input sequences
+* :doc:`beluga` - 2018 DeepSEA model with 2000bp input sequences
