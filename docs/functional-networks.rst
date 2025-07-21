@@ -1,8 +1,10 @@
 Tissue-specific Networks
 ===========================
-In order to leverage the vast collections of raw, noisy genomic data, they must be integrated, summarized, and presented in a biologically informative manner. We provide a means of mining tens of thousands of whole-genome experiments by way of functional interaction networks.(`Grene and Troyanskaya 2012 <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002816>`_). Each interaction network represents a body of data, probabilistically weighted and integrated, focused on a particular tissue or process context. 
+In order to leverage the vast collections of raw, noisy genomic data, they must be integrated, summarized, and presented in a biologically informative manner. We provide a means of mining tens of thousands of whole-genome experiments by way of functional interaction networks. Each interaction network represents a body of data, probabilistically weighted and integrated, focused on a particular tissue or process context. 
 
 It is important to consider gene relationships within a tissue context as the precise actions of genes are frequently dependent on their tissue context, and human diseases result from the disordered interplay of tissue- and cell lineage–specific processes. These factors combine to make the understanding of tissue-specific gene functions, disease pathophysiology and gene-disease associations particularly challenging.
+
+Tissue-specific network construction is described in the following publication: Greene, C. S., Krishnan, A., Wong, A. K., Ricciotti, E., Zelaya, R. A., Himmelstein, D. S., ... & Troyanskaya, O. G. (2015). `Understanding multicellular function and disease with human tissue-specific networks <https://www.nature.com/articles/ng.3259>`_. Nature Genetics.
 
 Method
 ---------------------------

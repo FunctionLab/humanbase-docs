@@ -35,7 +35,6 @@ Help topics
 
    usage
    functional-networks
-   tissue-networks
    modules
    netwas
    sei
@@ -44,4 +43,5 @@ Help topics
    expecto
    clever
    in-silico-mutagenesis
+   asdbrowser
    citations
