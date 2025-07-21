@@ -40,6 +40,14 @@ Large submissions
 We recommend using the web server if you have <10,000 variants or sequences. You will experience degraded performance when submitting a larger set of sequences. In those instances, we suggest that you split the set into multiple <10,000 submissions, or run the standalone version on your local machine, or contact our group directly.
 
 
+Downloads
+---------
+The 1000 Genome Project RBP LDScores used in GWAS analysis are available `here <https://humanbase.s3-us-west-2.amazonaws.com/seqweaver/Seqweaver_RBP_ldscores.tar.gz>`_.
+
+GnomAD (v2.1) Seqweaver RBP target site dysregulation scores are available `here <https://humanbase.s3-us-west-2.amazonaws.com/seqweaver/Seqweaver_RBP_gnomAD.tar.gz>`_.
+
+The code for making variant effect predictions for Seqweaver `RBP model <https://humanbase.s3-us-west-2.amazonaws.com/seqweaver/Seqweaver-v0.1.tar.gz>`_ are available from this link (Zhou and Park et al. Nature Gen 2019). Our `new version <https://s3-us-west-2.amazonaws.com/humanbase/asd/code_asd_dnarna_v3.tar.gz>`_ simplifies the dependencies by using the `Selene <https://github.com/FunctionLab/selene>`_ package and streamlines the prediction process for RBP models.
+
 Output
 ------
 
