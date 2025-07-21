@@ -48,6 +48,6 @@ Help topics
    beluga
    seqweaver
    expecto
-   clever
+   expectosc
    in-silico-mutagenesis
    citations
