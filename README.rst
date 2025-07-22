@@ -76,7 +76,7 @@ The documentation is organized as follows:
     * ``sei.rst`` - Sei/DeepSEA sequence-based predictions
     * ``beluga.rst`` - DeepSEA (Beluga) chromatin profile predictions
     * ``expecto.rst`` - ExPecto expression predictions
-    * ``clever.rst`` - CLEVER variant effect predictions
+    * ``expectosc.rst`` - ExPectoSC variant effect predictions
     * ``netwas.rst`` - NetWAS network-based association studies
     * ``in-silico-mutagenesis.rst`` - In silico mutagenesis analysis
 

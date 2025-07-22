@@ -37,11 +37,12 @@ Help topics
    functional-networks
    modules
    netwas
+   deepsea
    sei
    beluga
    seqweaver
    expecto
-   clever
+   expectosc
    in-silico-mutagenesis
    asdbrowser
    citations

@@ -13,7 +13,6 @@ The ExPectoSC framework is described in the following manuscript: Ksenia Sokolov
 
 The code for predicting expression effects for human genome variants and training new expression models is available at this `github repository <https://github.com/ksenia007/ExPectoSC>`_.
 
-
 Website overview
 ----------------
 After user enters a gene name, the Primary View is returned showing the predictions for the pre-computed variants for the region (includes 1000G and ClinVar variants). The variants are oriented so that the lowest chromosomal coordinate for the gene region is on the left side of the screen. The heatmap colors represent the max effect cell type prediction within the organ system. Rows are grouped organ systems, and columns are variant locations:
@@ -67,4 +66,3 @@ Method Details
 ExPectoSC is a modular framework, that uses regularized linear module upon deep convolutional network model of chromatin profifiling effects to predict cell type specific expression. The framework is capable of predicting expression levels directly from sequence and is sensitive to the sequence variations.
 
 The chromatin predictions were computed using a DeepSEA "Beluga" model, using sliding window approach of 2000bp width with 200bp step, for the 40kb region surrounding the TSS. Exponential condense function is then used to reduce the dimensionality of the data before using it in the regularized linear module. 
-
