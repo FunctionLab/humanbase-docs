@@ -5,9 +5,11 @@ Sei
 Introduction
 ------------
 
-Sei is a deep-learning-based framework for systematically predicting sequence regulatory activities and applying sequence information to understand human genetics data. Sei provides a global map from any sequence to regulatory activities, as represented by 40 sequence classes. Each sequence class integrates predictions for 21,907 chromatin profiles (transcription factor, histone marks, and chromatin accessibility profiles across a wide range of cell types) from the underlying Sei deep learning model. You can also find the Sei code repository `here <https://github.com/FunctionLab/sei-framework>`_ or read about our manuscript `here <https://www.biorxiv.org/content/10.1101/2021.07.29.454384v1>`_.
+Sei is a deep-learning-based framework for systematically predicting sequence regulatory activities and applying sequence information to understand human genetics data. Sei provides a global map from any sequence to regulatory activities, as represented by 40 sequence classes. Each sequence class integrates predictions for 21,907 chromatin profiles (transcription factor, histone marks, and chromatin accessibility profiles across a wide range of cell types) from the underlying Sei deep learning model. 
 
-Sequence class-level variant effects are computed by comparing the predictions for the reference and the alternative alleles. A positive score indicates an increase in sequence class activity by the alternative allele and vice versa. Sequence class-level scores are computed by projecting the 21,907 chromatin profile predictions for the sequence to the unit vector that represents each sequence class.
+Sei is described in the following manuscript: Kathleen M. Chen, Aaron K. Wong, Olga G. Troyanskaya and Jian Zhou, `A sequence-based global map of regulatory activity for deciphering human genetics <https://www.nature.com/articles/s41588-022-01102-2>`_. Nature Genetics (2018).
+
+The Sei code repository can be found `here <https://github.com/FunctionLab/sei-framework>`_.
 
 For older DeepSEA models see:
 :doc:`beluga` (2019)
@@ -17,7 +19,7 @@ Input
 -----
 
 .. |bp_length| replace:: 4096
-.. |bed_example| replace:: ``chr1 109817091 109821186``
+.. |bed_example| replace:: ``chr5 134871851 134871852``
 
 .. include:: _includes/common-input-formats.rst
 
@@ -30,7 +32,7 @@ Output
 Sequence classes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Sei framework predicts 40 sequence class scores, covering a wide range of regulatory activities such as cell-type-specific enhancers and promoters, as well as 21,907 chromatin profiles for any DNA sequence. A full description of how Sei sequence scores are computed can be found in the `Sei paper (2022) <https://www.nature.com/articles/s41588-022-01102-2>`_.
+The Sei framework predicts 40 sequence class scores, covering a wide range of regulatory activities such as cell-type-specific enhancers and promoters, as well as 21,907 chromatin profiles for any DNA sequence. Sequence class-level variant effects are computed by comparing the predictions for the reference and the alternative alleles. A positive score indicates an increase in sequence class activity by the alternative allele and vice versa. Sequence class-level scores are computed by projecting the 21,907 chromatin profile predictions for the sequence to the unit vector that represents each sequence class.A full description of how Sei sequence scores are computed can be found in the `Sei paper (2022) <https://www.nature.com/articles/s41588-022-01102-2>`_.
 
 To help interpretation, we grouped sequence classes into groups including P (Promoter), E (Enhancer), CTCF (CTCF-cohesin binding), TF (TF binding), PC (Polycomb-repressed), HET (Heterochromatin), TN (Transcription), and L (Low Signal) sequence classes. Please refer to our manuscript for a more detailed description of the sequence classes.
 
