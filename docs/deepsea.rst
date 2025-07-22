@@ -18,3 +18,4 @@ The following analysis tools and methods in HumanBase are built upon the DeepSEA
 * :doc:`expecto` - Tissue-specific gene expression effects of variants
 * :doc:`expectosc` - Cell-type-specific gene expression effects for mutations
 * :doc:`in-silico-mutagenesis` - Discover regulatory features of sequences
+* :doc:`asdbrowser` - Predicted effects of ASD proband mutations
