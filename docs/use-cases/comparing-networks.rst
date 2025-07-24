@@ -34,9 +34,3 @@ This use case is drawn from Akat et al. 2022, Bronchopulmonary dysplasia and wnt
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/functional-networks` - Tissue-specific functional networks documentation
-* :doc:`functional-enrichments` - Functional enrichments in networks use case
-* :doc:`networks-use-case` - Networks use case

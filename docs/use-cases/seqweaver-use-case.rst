@@ -34,7 +34,3 @@ Use case drawn from Park et al. 2021, Genome-wide landscape of RNA-binding prote
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/seqweaver` - Main Seqweaver documentation

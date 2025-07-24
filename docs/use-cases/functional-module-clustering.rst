@@ -22,10 +22,3 @@ Inflammation-Related Genetic Findings in Schizophrenia and Related Psychoses: A 
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/modules` - Main functional module detection documentation
-* :doc:`/functional-networks` - Tissue-specific functional networks documentation
-* :doc:`functional-enrichments` - Functional enrichments in networks use case
-* :doc:`comparing-networks` - Comparing networks use case

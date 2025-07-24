@@ -18,9 +18,3 @@ In Silico Mutagenesis use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/in-silico-mutagenesis` - Main In Silico Mutagenesis documentation
-* :doc:`/beluga` - Beluga (DeepSEA) documentation
-* :doc:`ctcf-disruption` - CTCF disruption example using in silico mutagenesis

@@ -18,9 +18,3 @@ NetWAS use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/netwas` - Main NetWAS documentation
-* :doc:`/functional-networks` - Tissue-specific functional networks documentation
-* :doc:`networks-use-case` - Networks use case

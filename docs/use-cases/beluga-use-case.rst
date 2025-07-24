@@ -39,8 +39,3 @@ Beluga (DeepSEA) use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/beluga` - Main Beluga (DeepSEA) documentation
-* :doc:`ctcf-disruption` - CTCF disruption example using Beluga

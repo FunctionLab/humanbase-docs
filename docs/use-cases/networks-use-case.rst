@@ -34,11 +34,3 @@ Drawn from Cury et al. 2023, Transcriptional profiles and common genes link lung
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/functional-networks` - Tissue-specific functional networks documentation
-* :doc:`/tissue-networks` - Tissue-specific networks documentation
-* :doc:`functional-enrichments` - Functional enrichments in networks use case
-* :doc:`comparing-networks` - Comparing networks use case
-* :doc:`functional-module-clustering` - Functional module clustering use case

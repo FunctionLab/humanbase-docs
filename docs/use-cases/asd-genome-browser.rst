@@ -18,9 +18,3 @@ ASD Genome Browser use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/asdbrowser` - Main ASD Genome Browser documentation
-* :doc:`/beluga` - Beluga (DeepSEA) for DNA disease impact scores
-* :doc:`/seqweaver` - Seqweaver for RNA disease impact scores

@@ -14,8 +14,3 @@ Input the desired coordinates to download in the top left (red box). Once the co
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/in-silico-mutagenesis` - In silico mutagenesis tool that uses FASTA files
-* :doc:`ctcf-disruption` - CTCF disruption example that demonstrates FASTA extraction

@@ -68,9 +68,3 @@ The VCF file for the variants that we query looks like this:
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/beluga` - Main Beluga documentation
-* :doc:`/in-silico-mutagenesis` - In silico mutagenesis tool documentation
-* :doc:`extracting-fasta` - Tutorial on extracting FASTA files

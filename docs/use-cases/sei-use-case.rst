@@ -31,7 +31,3 @@ Sei use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/sei` - Main Sei documentation

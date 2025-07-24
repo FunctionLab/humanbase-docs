@@ -40,8 +40,3 @@ ExPecto use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/expecto` - Main ExPecto documentation
-* :doc:`expectosc-use-case` - ExPectoSC use case

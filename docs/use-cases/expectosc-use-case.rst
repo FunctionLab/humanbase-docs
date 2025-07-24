@@ -25,8 +25,3 @@ ExPectoSC use case
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/expectosc` - Main ExPectoSC documentation
-* :doc:`expecto-use-case` - ExPecto use case

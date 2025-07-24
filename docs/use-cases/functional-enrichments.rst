@@ -31,9 +31,3 @@ This use case is drawn from De Roover et al. 2021, Hypoxia induces DOT1L in arti
    :align: center
    :width: 600px
 
-Related Tools
--------------
-
-* :doc:`/functional-networks` - Tissue-specific functional networks documentation
-* :doc:`/modules` - Functional module detection
-* :doc:`comparing-networks` - Comparing networks use case
