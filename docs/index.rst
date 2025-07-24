@@ -30,10 +30,11 @@ HumanBase is actively developed by the `Genomics group <https://www.simonsfounda
 Help topics
 ---------------------
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    usage
+   use-cases
    functional-networks
    modules
    netwas
