@@ -7,24 +7,20 @@
 HumanBase User Guide
 =====================
 
+HumanBase is a resource for biological researchers interested in data-driven predictions of gene expression, function, regulation, and interactions in human, particularly in the context of specific cell types/tissues and human disease. A brief summary of some of the key tools included in HumanBase is below; for more detail on each tool, see the corresponding documentation page.
+
+This resource is not merely a public database of primary genomics data or biological literature. The data-driven integrative analyses (i.e. algorithms that “learn” from large genomic data collections) presented in HumanBase are especially powerful because they separate signal from noise in large biological data collections to reach beyond “existing biological knowledge” represented in the biological literature to identify novel associations that are not biased toward well-studied areas of biomedical research. Carefully designed algorithms can drive the development of experimentally testable hypotheses. Thus, HumanBase is a resource for biomedical researchers to incorporate into their research workflows, which they can use to interpret their experimental results and generate hypotheses for experimental follow-up.
 
 ---------------------
-About
+Who are we?
 ---------------------
 
-HumanBase is a resource for biological and biomedical researchers interested in data-driven predictions of gene expression, function, regulation, and interactions in human, particularly in the context of specific cell types/tissues, development, and human disease.
-
-Data-driven integrative analyses are especially powerful because they reach beyond “known biological knowledge” represented in the biological literature to identify novel associations that are not biased toward well-studied areas of biomedical research. Thus, carefully designed algorithms can drive the development of experimentally testable hypotheses, enabling deeper understanding of basic biology at the molecular level, pathophysiology, and paving the way to therapy and drug development.
+HumanBase is actively developed by the `Genomics group <https://www.simonsfoundation.org/flatiron-institute/simons-center-for-data-analysis/genomics/>`_ at the  `Flatiron Institute <https://www.simonsfoundation.org/flatiron-institute/>`_.
 
 ---------------------
 Licensing
 ---------------------
 All data in HumanBase are freely available under a `CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`_ license. Please give appropriate credit, provide a link to the license, and indicate if changes were made.
-
----------------------
-Who are we?
----------------------
-HumanBase is actively developed by the `Genomics group <https://www.simonsfoundation.org/flatiron-institute/simons-center-for-data-analysis/genomics/>`_ at the  `Flatiron Institute <https://www.simonsfoundation.org/flatiron-institute/>`_ .
 
 ---------------------
 Help topics
