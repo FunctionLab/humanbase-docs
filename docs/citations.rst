@@ -35,7 +35,7 @@ Sokolova, K., Theesfeld, C. L., Wong, A. K., Zhang, Z., Dolinski, K., & Troyansk
 
 Autism gene predictions
 ~~~~~~~~~~~~~~~~~~~~~~~
-Krishnan A*, Zhang R*, Yao V, Theesfeld CL, Wong AK, Tadych A, Volfovsky N, Packer A, Lash A, Troyanskaya OG.(2016) Genome-wide prediction and functional characterization of the genetic basis of autism spectrum disorder. Nature Neuroscience.
+Zhou, J.*, Park, C. Y.*, Theesfeld, C. L.*, Wong, A. K., Yuan, Y., Scheckel, C., ... & Troyanskaya, O. G. (2019). `Whole-genome deep-learning analysis identifies contribution of noncoding mutations to autism risk <https://www.nature.com/articles/s41588-019-0420-0>`_. Nature genetics, 51(6), 973-980.
 
 Tissue-expression predictions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
