@@ -33,7 +33,7 @@ ExPectoSC
 ~~~~~~~~~
 Sokolova, K., Theesfeld, C. L., Wong, A. K., Zhang, Z., Dolinski, K., & Troyanskaya, O. G. (2023), `Atlas of primary cell-type specific sequence models of gene expression and variant effects <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_. Cell Reports Methods.
 
-Autism gene predictions
+Autism variant effect predictions
 ~~~~~~~~~~~~~~~~~~~~~~~
 Zhou, J.*, Park, C. Y.*, Theesfeld, C. L.*, Wong, A. K., Yuan, Y., Scheckel, C., ... & Troyanskaya, O. G. (2019). `Whole-genome deep-learning analysis identifies contribution of noncoding mutations to autism risk <https://www.nature.com/articles/s41588-019-0420-0>`_. Nature genetics, 51(6), 973-980.
 
