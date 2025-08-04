@@ -33,7 +33,7 @@ Beluga (DeepSEA) use case
    :width: 600px
 
 
-* An alternative view allows users to see all 2002 predictions by Beluga at one time. Select the “Features” tab. In this view each dot is a chromatin feature predicted by Beluga and they are ranked by z-score. With this view a user can see both tails of the predictions and can assess how many features are predicted to increase with the variant (right side) or decrease(left side) the probability. Mouse over of a dot shows which feature is represented and the score.
+* An alternative view allows users to see all 2002 predictions by Beluga at one time. Select the “Features” tab. In this view each dot is a chromatin feature predicted by Beluga and they are ranked by z-score. With this view a user can see both tails of the predictions and can assess how many features are predicted to increase with the variant (right side) or decrease (left side) the probability. Mouse over of a dot shows which feature is represented and the score.
 
 .. figure:: ../img/use-cases/beluga-5.png
    :align: center
