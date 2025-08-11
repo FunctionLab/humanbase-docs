@@ -25,8 +25,8 @@ Seqweaver
 Park, C. Y., Zhou, J., Wong, A. K., Chen, K. M., Theesfeld, C. L., Darnell, R. B., & Troyanskaya, O. G. (2021). `Genome-wide landscape of RNA-binding protein target site dysregulation reveals a major impact on psychiatric disorder risk <https://www.nature.com/articles/s41588-020-00761-3>`_. Nat Genet.
 
 
-Variant effect predictions (ExPecto)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ExPecto
+~~~~~~~~
 Zhou, J., Theesfeld, C. L., Yao, K., Chen, K. M., Wong, A. K., & Troyanskaya, O. G. (2018), `Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk <https://www.nature.com/articles/s41588-018-0160-6>`_, Nature Genetics.
 
 ExPectoSC
