@@ -23,7 +23,7 @@ Download
 --------
 Predicted expression effects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the bulk download `link <http://deepsea.princeton.edu/media/code/expecto/combined_snps.0.3.zip>`_ of all mutation predictions.
+This is the bulk download `link <http://deepsea.princeton.edu/media/code/expecto/combined_snps.0.3.zip>`_ of 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue).
 
 Variation potential directionality scores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
