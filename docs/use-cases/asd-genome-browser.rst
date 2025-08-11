@@ -5,7 +5,7 @@ ASD Genome Browser use case
 **Task: What is the significance of a noncoding autism proband variation observed in the** `Simons Simplex Collection <https://www.sfari.org/resource/simons-simplex-collection>`_ **?**
 
 
-* Select the ASD Browser analysis. Input a genomic region of interest. For example, here we view the predicted disease impact of variants in the vicinity of gene TENM3, centered on a predicted high DNA disease impact variant in an intronic region (see the help page for Beluga (DeepSEA) for information on how the DNA disease impact score is computed and the help page for Seqweaver for information on how the RNA disease impact score is computed.
+* Select the ASD Browser analysis. Input a genomic region of interest. For example, here we view the predicted disease impact of variants in the vicinity of gene TENM3, centered on a predicted high DNA disease impact variant in an intronic region (see the help page for Beluga (DeepSEA) for information on how the DNA disease impact score is computed and the help page for Seqweaver for information on how the RNA disease impact score is computed).
 
 .. figure:: ../img/use-cases/asd-browser-1.png
    :align: center
