@@ -4,7 +4,7 @@ CTCF disruption example
 
 **Task: Investigate the impact of variants at a site experimentally determined to bind CTCF.**
 
-HumanBase sequence models can be used to probe how sequence relates to function. For example, given the experimental observation that CTCF binds in a ChipSeq assay to the region chr1:762285-762358 (hg19) (`insulatordb.uthsc.edu <http://insulatordb.uthsc.edu/>`_), a researcher can ask which positions and bases (ACG or T) are important for binding through querying the model with a set of variants.
+HumanBase sequence models can be used to probe how sequence relates to function. For example, given the experimental observation that CTCF binds in a ChipSeq assay to the region chr1:762285-762358 (hg19) (`insulatordb.uthsc.edu <http://insulatordb.uthsc.edu/>`_), a researcher can ask which positions and bases (A,C,G or T) are important for binding through querying the model with a set of variants.
 
 The variants can be any possible set of variants. In item 1, we query a set of variants near the center of the CTCF binding region (could be from a screen, a set of variants observed in genome sequencing study, etc.). No more than 10,000 variants may be queried in a single submission to the webserver. In item 7, we query the model to predict the effect of every single possible mutation across the region with in silico mutagenesis.
 
