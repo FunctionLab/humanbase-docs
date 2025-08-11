@@ -9,7 +9,8 @@ Perform "In silico saturated mutagenesis" (ISM) analysis to discover informative
 
 Note that ISM only accepts a sequence (FASTA file) as input. The input FASTA file should be 2000 base pairs long.
 
-The chromatin impact prediction is performed using the :doc:`beluga` model.
+The chromatin impact prediction is performed using the :doc:`beluga` model. See the following manuscript: Jian Zhou, Chandra L. Theesfeld, Kevin Yao, Kathleen M. Chen, Aaron K. Wong, and Olga G. Troyanskaya, `Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk <https://www.nature.com/articles/s41588-018-0160-6>`_. Nature Genetics (2018).
+
 
 ISM outputs effects for each of three possible substitutions of all 2000 bases, across all chromatin features.
 
