@@ -18,7 +18,7 @@ To determine if certain features (ie. transcription factors, marks, or cell type
 Input
 -----
 
-Beluga predicts genomic variant effects on a wide range of chromatin features at the variant position (Transcription factors binding, DNase I hypersensitive sites, and histone marks in multiple human cell types). DeepSEA can also be utilized for predicting chromatin features for any DNA sequence.
+Beluga predicts genomic variant effects on a wide range of chromatin features at the variant position (Transcription factors binding, DNase I hypersensitive sites, and histone marks in multiple human cell types). 
 
 .. |bp_length| replace:: 2000
 .. |bed_example| replace:: ``chr5 134871851 134871852``

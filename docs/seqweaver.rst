@@ -19,7 +19,7 @@ We support three types of input: VCF, FASTA, BED. If you want to predict effects
 
 Examples of all input formats are available in the job submission interface. See below for a quick introduction:
 
-**VCF format** is used for specifying a genomic variant. A minimal example is ``chr8 38120276 [QKI disruption] C A +`` (if you want to copy cover this text as input, you will need to change spaces to tabs). The six columns are chromosome, position, name, reference allele, alternative allele, and strand. Note that strand must be specified for Seqweaver but not for the other deep learning models. 
+**VCF format** is used for specifying a genomic variant. A minimal example is ``chr8 38120276 [QKI disruption] C A +`` (if you want to copy this text as input, you will need to change spaces to tabs). The six columns are chromosome, position, name, reference allele, alternative allele, and strand. Note that strand must be specified for Seqweaver but not for the other deep learning models. 
 
 **FASTA format** input should include sequences of 1000 bp length each. If a sequence is different from 1000 bp:
 
