@@ -4,7 +4,7 @@ ExPecto
 
 Introduction
 ------------
-ExPecto is a framework for ab initio sequence-based prediction of mutation gene expression effects and disease risks. With this web interface, we provide an explorer of tissue-specific expression effect predictions.
+ExPecto is a framework for ab initio sequence-based prediction of mutation gene expression effects and disease risks. Importantly, this framework is trained without using any variant data, allowing it to predict the expression effects of any variant, including rare or previously unseen ones. With this web interface, we provide an explorer of tissue-specific expression effect predictions.
 
 The ExPecto framework is described in the following manuscript: Jian Zhou, Chandra L. Theesfeld, Kevin Yao, Kathleen M. Chen, Aaron K. Wong, and Olga G. Troyanskaya, `Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk <https://www.nature.com/articles/s41588-018-0160-6>`_, Nature Genetics (2018).
 

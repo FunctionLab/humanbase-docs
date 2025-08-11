@@ -6,8 +6,7 @@ Introduction
 ------------
 
 Seqweaver is a deep learning framework designed to predict how genetic variants affect post-transcriptional RNA-binding protein (RBP) interactions. The model is trained on RBP-RNA interaction data
-obtained from CLIP-seq experiments. Seqweaver consists of 232 RBP models spanning 88 distinct RBPs, and can predict the impact of genetic variants (including variants never seen in genomic
-databases) at single-nucleotide resolution.
+obtained from CLIP-seq experiments. Seqweaver consists of 232 RBP models spanning 88 distinct RBPs, and can predict the impact of genetic variants at single-nucleotide resolution. Importantly, this framework is trained without using any variant data, allowing it to predict the impact on RBP binding of any variant, including rare or previously unseen ones.
 
 Seqweaver is described in:
 Park CY, Zhou J, Wong AK, Chen KM, Theesfeld CL, Darnell RB, Troyanskaya OG. `Genome-wide landscape of RNA-binding protein target site dysregulation reveals a major impact on psychiatric disorder risk <https://www.nature.com/articles/s41588-020-00761-3>`_. Nat Genet. 2021 Feb;53(2):166-173.
