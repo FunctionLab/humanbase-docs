@@ -1,6 +1,6 @@
 We support three types of input: VCF, FASTA, BED. If you want to predict effects of noncoding variants, use VCF format input. If you want to predict chromatin feature probabilities for DNA sequences, use FASTA format. If you want to specify sequences from the human reference genome, you can use BED format. See below for a quick introduction:
 
-**VCF format** is used for specifying a genomic variant. A minimal example is ``chr1 109817590 - G T`` (if you want to copy cover this text as input, you will need to change spaces to tabs). The five columns are chromosome, position, name, reference allele, and alternative allele.
+**VCF format** is used for specifying a genomic variant. A minimal example is ``chr1 109817590 - G T`` (if you want to copy this text as input, you will need to change spaces to tabs). The five columns are chromosome, position, name, reference allele, and alternative allele.
 
 **FASTA format** input should include sequences of |bp_length|\ bp length each. If a sequence is different from |bp_length|\ bp:
 

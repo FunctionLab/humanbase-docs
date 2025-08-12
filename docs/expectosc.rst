@@ -6,7 +6,7 @@ ExPectoSC
 Introduction
 ------------
 
-ExPectoSC is a framework for `ab initio` sequence-based prediction of mutation gene expression effects for primary human cell types. With this web interface, we provide an explorer of cell type-specific expression effect predictions. The current release contains all ClinVar variants within +/- 20kb of the representative TSS of a gene. We use 1000 Genomes variant effects predictions for z-score normalization. No effect threshold was employed for the current release of the data. Importantly, this framework is trained without using any variant data, allowing it to predict the expression effects of any variant, including rare or previously unseen ones.
+ExPectoSC is a framework for *ab initio* sequence-based prediction of mutation gene expression effects for primary human cell types. With this web interface, we provide an explorer of cell type-specific expression effect predictions. The current release contains all ClinVar variants within +/- 20kb of the representative TSS of a gene. We use 1000 Genomes variant effects predictions for z-score normalization. No effect threshold was employed for the current release of the data. Importantly, this framework is trained without using any variant data, allowing it to predict the expression effects of any variant, including rare or previously unseen ones.
 
 The ExPectoSC framework is described in the following manuscript: Ksenia Sokolova, Chandra L. Theesfeld, Aaron K. Wong, Zijun Zhang, Kara Dolinski and Olga G. Troyanskaya, `Atlas of primary cell-type specific sequence models of gene expression and variant effects <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_. Cell Reports Methods (2023).
 
@@ -63,6 +63,6 @@ Download
 
 Method Details
 --------------
-ExPectoSC is a modular framework, that uses regularized linear module upon deep convolutional network model of chromatin profifiling effects to predict cell type specific expression. The framework is capable of predicting expression levels directly from sequence and is sensitive to the sequence variations.
+ExPectoSC is a modular framework, that uses regularized linear module upon deep convolutional network model of chromatin profiling effects to predict cell type specific expression. The framework is capable of predicting expression levels directly from sequence and is sensitive to the sequence variations.
 
 The chromatin predictions were computed using a DeepSEA "Beluga" model, using sliding window approach of 2000bp width with 200bp step, for the 40kb region surrounding the TSS. Exponential condense function is then used to reduce the dimensionality of the data before using it in the regularized linear module. 

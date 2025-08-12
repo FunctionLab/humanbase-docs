@@ -7,7 +7,7 @@ Introduction
 
 Sei is a deep-learning-based framework for systematically predicting sequence regulatory activities and applying sequence information to understand human genetics data. Sei provides a global map from any sequence to regulatory activities, as represented by 40 sequence classes. Each sequence class integrates predictions for 21,907 chromatin profiles (transcription factor, histone marks, and chromatin accessibility profiles across a wide range of cell types) from the underlying Sei deep learning model. Importantly, this framework is trained without using any variant data, allowing it to predict the regulatory impact of any variant, including rare or previously unseen ones.
 
-Sei is described in the following manuscript: Kathleen M. Chen, Aaron K. Wong, Olga G. Troyanskaya and Jian Zhou, `A sequence-based global map of regulatory activity for deciphering human genetics <https://www.nature.com/articles/s41588-022-01102-2>`_. Nature Genetics (2018).
+Sei is described in the following manuscript: Kathleen M. Chen, Aaron K. Wong, Olga G. Troyanskaya and Jian Zhou, `A sequence-based global map of regulatory activity for deciphering human genetics <https://www.nature.com/articles/s41588-022-01102-2>`_. Nature Genetics (2022).
 
 The Sei code repository can be found `here <https://github.com/FunctionLab/sei-framework>`_.
 
