@@ -5,7 +5,8 @@ DeepSEA Analysis
 Introduction
 ------------
 
-DeepSEA is a deep learning framework that predicts genomic variant effects with single nucleotide sensitivity on a wide range of regulatory features: transcription factors binding, DNase I hypersensitive sites, and histone marks in multiple human cell types.
+DeepSEA is a deep learning framework that predicts genomic variant effects with single nucleotide sensitivity on a wide range of regulatory features: transcription factors binding, DNase I hypersensitive sites, and histone marks in multiple human cell types. Importantly, this framework is trained without using any variant data, allowing it to predict the chromatin impact of any variant, including rare or previously unseen ones.
+
 
 DeepSEA-based Methods
 ---------------------

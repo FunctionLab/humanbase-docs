@@ -2,9 +2,7 @@
 Functional module clustering use case
 =====================================
 
-This use case is drawn from Bishop et al. 2022, Inflammation Subtypes and Translating
-
-Inflammation-Related Genetic Findings in Schizophrenia and Related Psychoses: A Perspective on Pathways for Treatment Stratification and Novel Therapies
+This use case is drawn from Bishop et al. 2022, Inflammation Subtypes and Translating Inflammation-Related Genetic Findings in Schizophrenia and Related Psychoses: A Perspective on Pathways for Treatment Stratification and Novel Therapies
 
 **Task: How can I partition my list of genes of interest into modules, and what are the functional enrichments in these modules?**
 

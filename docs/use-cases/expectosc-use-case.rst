@@ -5,7 +5,7 @@ ExPectoSC use case
 **Task: Which non-coding variants have a strong effect on the cell-type specific expression of a nearby gene?**
 
 
-* Navigate to humanbase.io/expectosc or choose the “ExPectoSC” option from the main Analyses menu.Input a gene of interest (for example, PTEN).
+* Navigate to humanbase.io/expectosc or choose the “ExPectoSC” option from the main Analyses menu. Input a gene of interest (for example, PTEN).
 
 .. figure:: ../img/use-cases/expectosc-1.png
    :align: center

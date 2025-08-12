@@ -25,17 +25,17 @@ Seqweaver
 Park, C. Y., Zhou, J., Wong, A. K., Chen, K. M., Theesfeld, C. L., Darnell, R. B., & Troyanskaya, O. G. (2021). `Genome-wide landscape of RNA-binding protein target site dysregulation reveals a major impact on psychiatric disorder risk <https://www.nature.com/articles/s41588-020-00761-3>`_. Nat Genet.
 
 
-Variant effect predictions (ExPecto)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ExPecto
+~~~~~~~~
 Zhou, J., Theesfeld, C. L., Yao, K., Chen, K. M., Wong, A. K., & Troyanskaya, O. G. (2018), `Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk <https://www.nature.com/articles/s41588-018-0160-6>`_, Nature Genetics.
 
 ExPectoSC
 ~~~~~~~~~
 Sokolova, K., Theesfeld, C. L., Wong, A. K., Zhang, Z., Dolinski, K., & Troyanskaya, O. G. (2023), `Atlas of primary cell-type specific sequence models of gene expression and variant effects <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_. Cell Reports Methods.
 
-Autism gene predictions
+Autism variant effect predictions
 ~~~~~~~~~~~~~~~~~~~~~~~
-Krishnan A*, Zhang R*, Yao V, Theesfeld CL, Wong AK, Tadych A, Volfovsky N, Packer A, Lash A, Troyanskaya OG.(2016) Genome-wide prediction and functional characterization of the genetic basis of autism spectrum disorder. Nature Neuroscience.
+Zhou, J.*, Park, C. Y.*, Theesfeld, C. L.*, Wong, A. K., Yuan, Y., Scheckel, C., ... & Troyanskaya, O. G. (2019). `Whole-genome deep-learning analysis identifies contribution of noncoding mutations to autism risk <https://www.nature.com/articles/s41588-019-0420-0>`_. Nature genetics, 51(6), 973-980.
 
 Tissue-expression predictions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
