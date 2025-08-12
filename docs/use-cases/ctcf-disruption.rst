@@ -50,7 +50,7 @@ The VCF file for the variants that we query looks like this:
    :align: center
    :width: 600px
 
-**Step 6:** To further explore the predicted impact of variants at this site on CTCF binding, we can use the in silico mutagenesis tool. We first use the NCBI genome browser tool for hg19 at `https://www.ncbi.nlm.nih.gov/gdv/browser/genome/?id=GCF_000001405.25 <https://www.ncbi.nlm.nih.gov/gdv/browser/genome/?id=GCF_000001405.25>`_ (selecting the download button to the top right over the genome browser) to download a FASTA file of a 2000 base pair region centered at the experimentally determined CTCF binding site from insulatordb (see :doc:`extracting-fasta` tutorial). The region covered by the FASTA file is chr1:761322-763321. We then go to the in silico mutagenesis tool, upload our FASTA file, and press submit.
+**Step 6:** To further explore the predicted impact of variants at this site on CTCF binding, we can use the in silico mutagenesis tool. We first use the NCBI genome browser tool for hg19 at `https://www.ncbi.nlm.nih.gov/gdv/browser/genome/?id=GCF_000001405.25 <https://www.ncbi.nlm.nih.gov/gdv/browser/genome/?id=GCF_000001405.25>`_ (selecting the download button to the top right over the genome browser) to download a FASTA file of a 2000 base pair region centered at the experimentally determined CTCF binding site from insulatordb (see :doc:`extracting-fasta`). The region covered by the FASTA file is chr1:761322-763321. We then go to the in silico mutagenesis tool, upload our FASTA file, and press submit.
 
 .. figure:: ../img/use-cases/ctcf-disruption-6.png
    :align: center
