@@ -11,17 +11,15 @@ NetWAS trains a support vector machine classifier using nominally significant (P
 
 To calculate per-gene P values for a GWAS, we suggest the versatile gene-based association study (VEGAS) system.
 
-We have performed and evaluated NetWAS on six GWAS: C-reactive protein levels (lnCRP), type 2 diabetes (T2D), body mass index (BMI), hypertension (ht), alzheimer's (adni) and advanced age-related macular degeneration (advanced AMD). 
+We have performed and evaluated NetWAS on six GWAS: C-reactive protein levels (lnCRP), type 2 diabetes (T2D), body mass index (BMI), hypertension (ht), alzheimer's (adni) and advanced age-related macular degeneration (advanced AMD).
 
 GWAS File
 ---------------------------------------
 NetWAS requires as input a GWAS result file, with per-gene p-values. We suggest the versatile gene-based association study (VEGAS) system for calculating gene p-values, but we also support forge and pseq formats.
 
-* `VEGAS <http://gump.qimr.edu.au/VEGAS/>`_: versatile gene-based association study
+* `VEGAS <https://pmc.ncbi.nlm.nih.gov/articles/PMC2896770/>`_: versatile gene-based association study
 * `FORGE <https://github.com/inti/FORGE>`_: multivariate calculation of gene-wide p-values from Genome-Wide Association Studies Authors and Affiliations
-* `PLINK/SEQ <https://atgu.mgh.harvard.edu/plinkseq/index.shtml>`_: a library for the analysis of genetic variation data
-
-    Note that the expected format is from the output of `Gene/group-based association tests <http://atgu.mgh.harvard.edu/plinkseq-0.07/assoc.shtml>`_
+* `PLINK/SEQ <https://zzz.bwh.harvard.edu/plinkseq/>`_: a library for the analysis of genetic variation data
 
 NetWAS Results
 ---------------------------------------
@@ -31,8 +29,8 @@ When a NetWAS analysis finishes, a result file will be emailed to the provided a
  # HumanBase NetWAS Analysis Results
  #
  # Job id:      d7732f19-916d-4458-97b5-936b8d6345cb
- # Job title:   
- # Email:       
+ # Job title:
+ # Email:
  # Created:     2017-08-21 17:07:33 EDT
  # GWAS file:   bmi-2012.out.txt
  # GWAS format: vegas
