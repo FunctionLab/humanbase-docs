@@ -13,23 +13,27 @@ The code for predicting expression effects for human genome variants and trainin
 
 Output
 ------
+**ExPecto expression effect:**
+The ExPecto expression effect is the difference of predicted expression levels for reference and alternative allele. (See the `Expecto paper (2018) <https://www.nature.com/articles/s41588-018-0160-6>`_)
+
 **Regulatory feature scores:**
 The z-score, e-value, and probability diffs are computed as for the `DeepSEA (Beluga) model <https://humanbase.readthedocs.io/en/latest/beluga.html#regulatory-feature-scores>`_.
 
-**ExPecto expression effect:** 
-The ExPecto expression effect is the difference of predicted expression levels for reference and alternative allele. (See the `Expecto paper (2018) <https://www.nature.com/articles/s41588-018-0160-6>`_)
+* **DeepSEA probability diffs**: The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt} -p_{ref}`).
+* **DeepSEA e-value**: E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature's effect (:math:`abs(p_{alt} -p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
+* **DeepSEA z-score**: A scaled score where the feature diff score (:math:`p_{alt} -p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is "sign-preserving", i.e. a negative z-score indicates that a mutation **decreases** the probability of a regulatory feature.
 
 Download
 --------
 Predicted expression effects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the bulk download `link <http://deepsea.princeton.edu/media/code/expecto/combined_snps.0.3.zip>`_ of 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue).
+This is the bulk download `link <https://s3-us-west-2.amazonaws.com/humanbase/expecto/combined_snps.0.3.zip>`_ of 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue).
 
 Variation potential directionality scores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Variation potential of a gene in a tissue or cell-type can reflect the evolutionary constraint on its expression level. Specifically, we compute the variation potential directionality score as the sum of all directional mutation effects within 1kb to TSS. A negative variation potential indicates active expression and constraint toward higher expression level, and vice versa. The sum of absolute mutation effects, or the magnitudes, is predictive of tissue/condition-specificity of a gene. The variation potential directionality scores and the inferred evolution constraint probabilities can be downloaded `here <http://deepsea.princeton.edu/media/code/expecto/evocon.zip>`_.
 
-The full prediction of all 140 million mutations can be downloaded `here <http://deepsea.princeton.edu/media/code/expecto/all1kbmutations.tar>`_ (~125G).
+The full prediction of all 140 million mutations can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/all1kbmutations.tar>`_ (~125G).
 
 Method Details
 --------------
