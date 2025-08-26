@@ -15,11 +15,11 @@ Park CY, Zhou J, Wong AK, Chen KM, Theesfeld CL, Darnell RB, Troyanskaya OG. `Ge
 Input
 -----
 
-We support three types of input: VCF, FASTA, BED. If you want to predict effects of noncoding variants, use VCF format input. If you want to predict RBP interaction probabilities directly from transcript sequences, you can use FASTA format. If you want to specify sequences from the human reference genome, you can use BED format. 
+We support three types of input: VCF, FASTA, BED. If you want to predict effects of noncoding variants, use VCF format input. If you want to predict RBP interaction probabilities directly from transcript sequences, you can use FASTA format. If you want to specify sequences from the human reference genome, you can use BED format.
 
 Examples of all input formats are available in the job submission interface. See below for a quick introduction:
 
-**VCF format** is used for specifying a genomic variant. A minimal example is ``chr8 38120276 [QKI disruption] C A +`` (if you want to copy this text as input, you will need to change spaces to tabs). The six columns are chromosome, position, name, reference allele, alternative allele, and strand. Note that strand must be specified for Seqweaver but not for the other deep learning models. 
+**VCF format** is used for specifying a genomic variant. A minimal example is ``chr8 38120276 [QKI disruption] C A +`` (if you want to copy this text as input, you will need to change spaces to tabs). The six columns are chromosome, position, name, reference allele, alternative allele, and strand. Note that strand must be specified for Seqweaver but not for the other deep learning models.
 
 **FASTA format** input should include sequences of 1000 bp length each. If a sequence is different from 1000 bp:
 
@@ -70,7 +70,7 @@ Molecular-level biochemical effects prediction
 
 **E-value:** E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature’s effect (:math:`abs(p_{alt}-p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
 
-**Probability diffs:** The difference between the the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
+**Probability diffs:** The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
 
 See also
 --------

@@ -87,4 +87,4 @@ Note: sequence class predictions are only available for vcf inputs.
 
 Regulatory feature scores
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-* **diffs**: The difference between the the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt} -p_{ref}`).
+* **diffs**: The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt} -p_{ref}`).
