@@ -27,13 +27,13 @@ Download
 --------
 Predicted expression effects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the bulk download `link <https://s3-us-west-2.amazonaws.com/humanbase/expecto/combined_snps.0.3.zip>`_ of 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue).
+This is the bulk download `link <https://s3-us-west-2.amazonaws.com/humanbase/expecto/combined_snps.0.3.zip>`_ (1.9 GB) of 1000 Genomes variants that passed a minimum predicted effect threshold (>0.3 log fold-change in any tissue).
 
 Variation potential directionality scores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Variation potential of a gene in a tissue or cell-type can reflect the evolutionary constraint on its expression level. Specifically, we compute the variation potential directionality score as the sum of all directional mutation effects within 1kb to TSS. A negative variation potential indicates active expression and constraint toward higher expression level, and vice versa. The sum of absolute mutation effects, or the magnitudes, is predictive of tissue/condition-specificity of a gene. The variation potential directionality scores and the inferred evolutionary constraint probabilities can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/evocon.zip>`_.
+Variation potential of a gene in a tissue or cell-type can reflect the evolutionary constraint on its expression level. Specifically, we compute the variation potential directionality score as the sum of all directional mutation effects within 1kb to TSS. A negative variation potential indicates active expression and constraint toward higher expression level, and vice versa. The sum of absolute mutation effects, or the magnitudes, is predictive of tissue/condition-specificity of a gene. The variation potential directionality scores and the inferred evolutionary constraint probabilities can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/evocon.zip>`_ (34.4 MB).
 
-The full prediction of all 140 million mutations can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/all1kbmutations.tar>`_ (~125G).
+The full prediction of all 140 million mutations can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/all1kbmutations.tar>`_ (128 GB).
 
 Method Details
 --------------

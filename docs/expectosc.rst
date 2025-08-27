@@ -54,11 +54,11 @@ To analyze effect of the variants we get predictions for the reference and alter
 
 Download
 --------
-`ClinVar scaled non-coding predictions <https://humanbase.s3.us-west-2.amazonaws.com/clever/clinvar_1000G_final_nc_all_info.csv>`_ 
+`ClinVar scaled non-coding predictions <https://humanbase.s3.us-west-2.amazonaws.com/clever/clinvar_1000G_final_nc_all_info.csv>`_ (114.4 MB) 
 
-`sLDSC annotations <https://humanbase.s3.us-west-2.amazonaws.com/clever/CLEVER_preds_sLDSC_annot.tgz>`_ 
+`sLDSC annotations <https://humanbase.s3.us-west-2.amazonaws.com/clever/CLEVER_preds_sLDSC_annot.tgz>`_ (2.0 GB) 
 
-`DeepSEA weights <https://humanbase.s3.us-west-2.amazonaws.com/clever/deepsea.beluga.pth>`_
+`DeepSEA weights <https://humanbase.s3.us-west-2.amazonaws.com/clever/deepsea.beluga.pth>`_ (570.4 MB)
 
 
 Method Details
