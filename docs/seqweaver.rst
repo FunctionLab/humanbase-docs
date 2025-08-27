@@ -72,6 +72,9 @@ Molecular-level biochemical effects prediction
 
 **Probability diffs:** The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
 
+**Probability:** The predicted probability for the given allele for each regulatory feature (displayed in the interface for BED and FASTA inputs).
+
+
 See also
 --------
 * :doc:`sei` - Latest chromatin and regulatory impact model with 4096bp input sequences
