@@ -29,6 +29,7 @@ Network Analysis Use Cases
 
    use-cases/functional-enrichments
    use-cases/comparing-networks
+   use-cases/edge-contributions
    use-cases/functional-module-clustering
    use-cases/networks-use-case
    use-cases/netwas-use-case

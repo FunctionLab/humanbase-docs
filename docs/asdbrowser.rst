@@ -21,3 +21,13 @@ The Genome browser can be navigated by entering a genomic interval, a gene name,
 .. image:: img/genome_heatmap.png
 
 Individual molecular-level biochemical effects are shown as a heatmap. The biochemical features are sorted by the magnitude of predicts effects of the center mutation. Each mutation may be clicked to center the genome browser and the heatmap at that mutation, or the heatmap may be dragged to alter the center mutation. The user can select “DNA features” or “RNA features” from the dropdown menu. Mousing over any individual prediction in the heatmap will display details in a tooltip.
+
+Output
+------
+
+**Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See `Zhou et. al, 2019 <https://pubmed.ncbi.nlm.nih.gov/31133750/>`_). The predicted DIS probabilities are then converted into DIS e-values, computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
+
+.. math::
+   -\log_{10}(DIS\ evalue_{feature})
+
+**z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature. (The scores shown under Molecular-level biochemical effects prediction are z-scores for RNA and DNA features).
