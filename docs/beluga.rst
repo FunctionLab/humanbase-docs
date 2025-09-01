@@ -38,7 +38,7 @@ Variant scores
   .. math::
       -log10(DIS evalue_{feature})
 
-* **Mean -log e-value (MLE)**: For each predicted regulatory feature effect (:math:`abs(p_{alt}-p_{ref}`)) of a variant, we calculate a 'feature e-value' based on the empirical distribution of that feature's effects among gnomAD variants (see above Regulatory feature scores: e-value). The MLE score of a variant is
+* **Mean -log e-value (MLE)**: For each predicted regulatory feature effect (:math:`abs(p_{alt}-p_{ref}`)) of a variant, we calculate a 'feature e-value' based on the empirical distribution of that feature's effects among gnomAD variants (see below Molecular-level biochemical effects prediction: e-value). The MLE score of a variant is
 
   .. math::
       \sum -log10(evalue_{feature}) / N
