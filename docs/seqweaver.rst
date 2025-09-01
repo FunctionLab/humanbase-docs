@@ -31,9 +31,23 @@ Examples of all input formats are available in the job submission interface. See
   - **Note**: This padding behavior is not recommended. N's were extremely rare in training data (only appearing in assembly gaps), and the model has not been evaluated with artificially padded sequences
   - **Strong recommendation**: Always provide sequences of exactly 1000 bp by including genomic flanking sequences
 
-**BED format** provides another way to specify sequences in human reference genome (hg19). The BED input should specify 1000 bp-length regions. A minimal example is ``chr1 109817090 109818091 . 0 -``. The columns are chromosome, start position, end position, name, score, and strand.
+**BED format** provides another way to specify sequences. A minimal example is ``chr1 109817090 109817091 . 0 -``. The columns are chromosome, start position, end position, name, score, and strand.
 
+**Important BED Format Notes:**
 
+* **Coordinate System**: BED format uses 0-indexed start positions and 1-indexed end positions (half-open intervals). This is different from VCF format which uses 1-indexed positions.
+
+  - For equal start/end coordinates: interpreted as single position analysis (e.g., chr1:10000-10000 → center at position 10000)
+  - For odd-length intervals: the center is unambiguous (e.g., chr1:100-103 has center at position 101)
+  - For even-length intervals: we use the left-center position (floor division)
+
+* **Sequence Extraction**: As stated in the `Selene SDK documentation <https://selene.flatironinstitute.org/master/predict.html#selene_sdk.predict.model_predict.ModelPredict.get_predictions_for_bed_file>`_: *"The coordinates specified in each row are only used to find the center position for the resulting sequence-- regions returned will have the length expected by the model."*
+
+  - **Model-specific lengths**: Sequence length varies by model (Seqweaver: 1000bp, Beluga: 2000bp, Sei: 4096bp)
+
+    + Example: 5000bp interval chr1:10000-15000 with Beluga model → only center 2000bp (chr1:11500-13500) analyzed
+    + Consider using multiple smaller intervals if you need analysis of the entire large region
+    
 Large submissions
 ~~~~~~~~~~~~~~~~~
 We recommend using the web server if you have <10,000 variants or sequences. You will experience degraded performance when submitting a larger set of sequences. In those instances, we suggest that you split the set into multiple <10,000 submissions, or run the standalone version on your local machine, or contact our group directly.
