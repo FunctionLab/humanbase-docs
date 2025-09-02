@@ -11,17 +11,14 @@ The ExPecto framework is described in the following manuscript: Jian Zhou, Chand
 The code for predicting expression effects for human genome variants and training new expression models is available at this `github repository <https://github.com/FunctionLab/ExPecto>`_.
 
 
-Output
-------
-**ExPecto expression effect:**
-The ExPecto expression effect is the difference of predicted expression levels for reference and alternative allele. (See the `Expecto paper (2018) <https://www.nature.com/articles/s41588-018-0160-6>`_)
+Method Details
+--------------
+ExPecto uses exponential basis function-based linear models upon deep convolutional network model of chromatin effects. ExPecto predicts expression levels directly from sequence and is capable of predicting effects of sequence variations.
 
-**Regulatory feature scores:**
-The z-score, e-value, and probability diffs are computed as for the `DeepSEA (Beluga) model <https://humanbase.readthedocs.io/en/latest/beluga.html#regulatory-feature-scores>`_.
+For detailed procedures of the prediction, the chromatin predictions were computed from DeepSEA "Beluga" per 200bp bin, and 200 bins centered at TSS (40kb region) were used as input to predict expression effects. To reduce the dimensionality for ExPecto model training, the predicted chromatin spatial patterns were summarized to spatial features by 10 exponential basis functions. The summarized spatial features and gene expression levels were used to train regularized linear models for the final step of the prediction. The representative TSSes are selected based on FANTOM CAGE data.
 
-* **DeepSEA probability diffs**: The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt} -p_{ref}`).
-* **DeepSEA e-value**: E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature's effect (:math:`abs(p_{alt} -p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
-* **DeepSEA z-score**: A scaled score where the feature diff score (:math:`p_{alt} -p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is "sign-preserving", i.e. a negative z-score indicates that a mutation **decreases** the probability of a regulatory feature.
+We also propose a path toward *ab initio* disease risk prediction through combining the prediction of expression effects and the estimation of evolutionary constraints on expression levels. For example, mutations predicted to have strong negative expression effects on a positively constrained gene are predicted to be deleterious. We estimate evolutionary constraints through systematic profiling of potential mutation effects through in silico mutagenesis. As proof-of-principle we showed that this approach can predict the disease alleles from both curated HGMD disease mutation data and disease GWASes.
+
 
 Download
 --------
@@ -35,10 +32,19 @@ Variation potential of a gene in a tissue or cell-type can reflect the evolution
 
 The full prediction of all 140 million mutations can be downloaded `here <https://s3-us-west-2.amazonaws.com/humanbase/expecto/all1kbmutations.tar>`_ (128 GB).
 
-Method Details
---------------
-ExPecto uses exponential basis function-based linear models upon deep convolutional network model of chromatin effects. ExPecto predicts expression levels directly from sequence and is capable of predicting effects of sequence variations.
 
-For detailed procedures of the prediction, the chromatin predictions were computed from DeepSEA "Beluga" per 200bp bin, and 200 bins centered at TSS (40kb region) were used as input to predict expression effects. To reduce the dimensionality for ExPecto model training, the predicted chromatin spatial patterns were summarized to spatial features by 10 exponential basis functions. The summarized spatial features and gene expression levels were used to train regularized linear models for the final step of the prediction. The representative TSSes are selected based on FANTOM CAGE data.
+Output
+------
 
-We also propose a path toward *ab initio* disease risk prediction through combining the prediction of expression effects and the estimation of evolutionary constraints on expression levels. For example, mutations predicted to have strong negative expression effects on a positively constrained gene are predicted to be deleterious. We estimate evolutionary constraints through systematic profiling of potential mutation effects through in silico mutagenesis. As proof-of-principle we showed that this approach can predict the disease alleles from both curated HGMD disease mutation data and disease GWASes.
+ExPecto expression effect
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The ExPecto expression effect is the difference of predicted expression levels for reference and alternative allele. (See the `Expecto paper (2018) <https://www.nature.com/articles/s41588-018-0160-6>`_)
+
+Regulatory feature scores
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The z-score, e-value, and probability diffs are computed as for the `DeepSEA (Beluga) model <https://humanbase.readthedocs.io/en/latest/beluga.html#regulatory-feature-scores>`_.
+
+* **DeepSEA probability diffs**: The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt} -p_{ref}`).
+* **DeepSEA e-value**: E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature's effect (:math:`abs(p_{alt} -p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
+* **DeepSEA z-score**: A scaled score where the feature diff score (:math:`p_{alt} -p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is "sign-preserving", i.e. a negative z-score indicates that a mutation **decreases** the probability of a regulatory feature.
+
