@@ -31,9 +31,23 @@ Examples of all input formats are available in the job submission interface. See
   - **Note**: This padding behavior is not recommended. N's were extremely rare in training data (only appearing in assembly gaps), and the model has not been evaluated with artificially padded sequences
   - **Strong recommendation**: Always provide sequences of exactly 1000 bp by including genomic flanking sequences
 
-**BED format** provides another way to specify sequences in human reference genome (hg19). The BED input should specify 1000 bp-length regions. A minimal example is ``chr1 109817090 109818091 . 0 -``. The columns are chromosome, start position, end position, name, score, and strand.
+**BED format** provides another way to specify sequences. A minimal example is ``chr1 109817090 109817091 . 0 -``. The columns are chromosome, start position, end position, name, score, and strand.
 
+**Important BED Format Notes:**
 
+* **Coordinate System**: BED format uses 0-indexed start positions and 1-indexed end positions (half-open intervals). This is different from VCF format which uses 1-indexed positions.
+
+  - For equal start/end coordinates: interpreted as single position analysis (e.g., chr1:10000-10000 → center at position 10000)
+  - For odd-length intervals: the center is unambiguous (e.g., chr1:100-103 has center at position 101)
+  - For even-length intervals: we use the left-center position (floor division)
+
+* **Sequence Extraction**: As stated in the `Selene SDK documentation <https://selene.flatironinstitute.org/master/predict.html#selene_sdk.predict.model_predict.ModelPredict.get_predictions_for_bed_file>`_: *"The coordinates specified in each row are only used to find the center position for the resulting sequence-- regions returned will have the length expected by the model."*
+
+  - **Model-specific lengths**: Sequence length varies by model (Seqweaver: 1000bp, Beluga: 2000bp, Sei: 4096bp)
+
+    + Example: 5000bp interval chr1:10000-15000 with Beluga model → only center 2000bp (chr1:11500-13500) analyzed
+    + Consider using multiple smaller intervals if you need analysis of the entire large region
+    
 Large submissions
 ~~~~~~~~~~~~~~~~~
 We recommend using the web server if you have <10,000 variants or sequences. You will experience degraded performance when submitting a larger set of sequences. In those instances, we suggest that you split the set into multiple <10,000 submissions, or run the standalone version on your local machine, or contact our group directly.
@@ -53,12 +67,12 @@ Output
 Variant scores
 ~~~~~~~~~~~~~~
 
-**Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See `Zhou et. al, 2019 <https://pubmed.ncbi.nlm.nih.gov/31133750/>`_). The predicted DIS probabilities are then converted into DIS e-values, computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
+* **Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See `Zhou et. al, 2019 <https://pubmed.ncbi.nlm.nih.gov/31133750/>`_). The predicted DIS probabilities are then converted into DIS e-values, computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
 
 .. math::
    -\log_{10}(DIS\ evalue_{feature})
 
-**Mean -log e-value:** For each predicted regulatory feature effect (:math:`abs(p_{alt}-p_{ref})`) of a variant, we calculate a feature e-value based on the empirical distribution of that feature’s effects among gnomAD variants (see Molecular-level biochemical effects prediction: e-value). The MLE score of a variant is
+* **Mean -log e-value:** For each predicted regulatory feature effect (:math:`abs(p_{alt}-p_{ref})`) of a variant, we calculate a feature e-value based on the empirical distribution of that feature’s effects among gnomAD variants (see Molecular-level biochemical effects prediction: e-value). The MLE score of a variant is
 
 .. math::
    \sum{-\log_{10}(evalue_{feature})}/N
@@ -66,13 +80,13 @@ Variant scores
 Molecular-level biochemical effects prediction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature.
+* **z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature.
 
-**E-value:** E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature’s effect (:math:`abs(p_{alt}-p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
+* **E-value:** E-value is defined as the expected proportion of SNPs with a larger predicted effect. We calculate an 'e-value' based on the empirical distribution of that feature’s effect (:math:`abs(p_{alt}-p_{ref})`) among gnomAD variants. For example, a feature e-value of 0.01 indicates that only 1% of gnomAD variants have a larger predicted effect.
 
-**Probability diffs:** The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
+* **Probability diffs:** The difference between the predicted probability of the reference allele and the alternative allele for a regulatory feature (:math:`p_{alt}-p_{ref}`).
 
-**Probability:** The predicted probability for the given allele for each regulatory feature (displayed in the interface for BED and FASTA inputs).
+* **Probability:** The predicted probability for the given allele for each regulatory feature (displayed in the interface for BED and FASTA inputs).
 
 
 See also

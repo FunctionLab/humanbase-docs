@@ -25,9 +25,9 @@ Individual molecular-level biochemical effects are shown as a heatmap. The bioch
 Output
 ------
 
-**Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See `Zhou et. al, 2019 <https://pubmed.ncbi.nlm.nih.gov/31133750/>`_). The predicted DIS probabilities are then converted into DIS e-values, computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
+* **Disease impact score:** DIS is calculated by training a logistic regression model that prioritizes likely disease-associated mutations on the basis of the predicted post-transcriptional regulatory effects of these mutations (See `Zhou et. al, 2019 <https://pubmed.ncbi.nlm.nih.gov/31133750/>`_). The predicted DIS probabilities are then converted into DIS e-values, computed based on the empirical distributions of predicted effects for gnomAD variants. The final DIS score is:
 
 .. math::
    -\log_{10}(DIS\ evalue_{feature})
 
-**z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature. (The scores shown under Molecular-level biochemical effects prediction are z-scores for RNA and DNA features).
+* **z-score:** A scaled score where the feature diff score (:math:`p_{alt} - p_{ref}`) is divided by the root mean square of the feature diff score across gnomAD variants. Note that this is “sign-preserving”, i.e. a negative z-score indicates that a mutation decreases the probability of a regulatory feature. (The scores shown under Molecular-level biochemical effects prediction are z-scores for RNA and DNA features).

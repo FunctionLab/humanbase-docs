@@ -4,7 +4,7 @@ Use Cases
 
 This section provides practical examples and tutorials demonstrating how to use various HumanBase tools for genomic analysis. Each use case walks through a specific research question and shows how to use the appropriate tools to answer it.
 
-These examples are drawn from real research publications and demonstrate the power of HumanBase's integrated approach to analyzing the functional effects of genetic variants, gene expression patterns, and biological networks.
+Many of these examples are drawn from real research publications. They demonstrate the power of HumanBase's integrated approach to analyzing the functional effects of genetic variants, gene expression patterns, and biological networks.
 
 Sequence Analysis Use Cases
 ---------------------------
