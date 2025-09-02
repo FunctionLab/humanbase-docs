@@ -50,7 +50,15 @@ Drop-down menu in the upper left corner allows users to select multiple organ ce
 
 Output
 ------
-To analyze effect of the variants we get predictions for the reference and alternative sequences and compare the difference. To compare the predictions between the cell-types, we normalized predictions of variant sets to those of 1000 Genomes variants by using the Z-scores computed per cell-type. As a rough guideline, z-scores of above ~3-5 represent more reliable predictions. See the `ExPectoSC paper (2023) <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_.
+* ***Expression Effect*** The Expression Effect scores are z-scored values for the predicted difference between reference and alternative alleles. Z-scores are computed per cell-type, with variant sets normalized to those of 1000 Genomes variants. The expression effect for a given varient is computed as:
+.. math::
+  (s - mean(s_{1},...,s_{m}))/std(s_{1},...,s_{m}), 
+where
+
+.. math::  
+  (s_{1},...,s_{m}) 
+are all of the 1000 Genomes variant predictions for the given cell type, and s is the unscaled variant effect prediction for the variant of interest. 
+As a rough guideline, z-scores of above ~3-5 represent more reliable predictions. See the `ExPectoSC paper (2023) <https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00224-2>`_.
 
 Download
 --------
