@@ -21,7 +21,7 @@ This use case is drawn from De Roover et al. 2021, Hypoxia induces DOT1L in arti
    :width: 600px
 
 
-* View functional enrichments of the gene of interest and related genes in the cartilage network. Download the network and functional enrichments. The color of an edge in the functional network indicates the probability that the corresponding pair of genes is functionally related (the network edge weights are computed by Bayesian integration of the data compendium using the tissue-specific gold standard).
+* View functional enrichments of the gene of interest and related genes in the cartilage network. Download the network and functional enrichments. The color of an edge in the functional network indicates the probability that the corresponding pair of genes is functionally related. For GIANT networks, edge weights are computed by Bayesian integration of the data compendium using the tissue-specific gold standard. For MAGE networks, edge weights are computed by a masked graph autoencoder and gradient-boosted integration model.
 
 .. figure:: ../img/use-cases/functional-enrichments-3.png
    :align: center
