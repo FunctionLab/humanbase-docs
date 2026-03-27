@@ -1,6 +1,6 @@
-=====================================
-Functional module clustering use case
-=====================================
+======================================
+Functional module clustering use cases
+======================================
 
 This use case is drawn from Bishop et al. 2022, Inflammation Subtypes and Translating Inflammation-Related Genetic Findings in Schizophrenia and Related Psychoses: A Perspective on Pathways for Treatment Stratification and Novel Therapies
 
@@ -19,4 +19,26 @@ This use case is drawn from Bishop et al. 2022, Inflammation Subtypes and Transl
 .. figure:: ../img/use-cases/functional-module-2.png
    :align: center
    :width: 600px
+
+
+The second use case is from a Biongenetic commercial renal panel to screen for prevalent hereditary kidney disorders.
+
+** Task: How can I determine specific processes and phenotypes that these disease genes participate in, and how do these genes differ in function in the global vs. relevant tissue network?
+
+
+* Select the “Modules” analysis. Input genes of interest (504 genes). Select the desired network (nephron). Select “Search.”
+
+.. figure:: ../img/use-cases/functional-module-3.png
+   :align: center
+   :width: 600px
+
+
+* Select the “Modules” analysis. Input genes of interest (504 genes). Select the desired network (global). Select “Search.”
+
+.. figure:: ../img/use-cases/functional-module-4.png
+   :align: center
+   :width: 600px
+
+
+* The resulting modules detected in the nephron network are more kidney-specific than the global network, even though there are more genes assigned to a module in the global network. The global network captures general modules spanning developmental biology and organ morphogenesis, while the kidney network covers kidney physiology, system-level regulation, and kidney development.
 
