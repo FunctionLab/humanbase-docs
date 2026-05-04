@@ -23,7 +23,7 @@ This use case is drawn from Bishop et al. 2022, Inflammation Subtypes and Transl
 
 The second use case is from a Biongenetic commercial renal panel to screen for prevalent hereditary kidney disorders.
 
-** Task: How can I determine specific processes and phenotypes that these disease genes participate in, and how do these genes differ in function in the global vs. relevant tissue network?
+**Task: How can I determine specific processes and phenotypes that these disease genes participate in, and how do these genes differ in function in the global vs. relevant tissue network?
 
 
 * Select the “Modules” analysis. Input genes of interest (504 genes). Select the desired network (nephron). Select “Search.”
