@@ -35,7 +35,6 @@ Help topics
    use-cases
    functional-networks
    modules
-   extended-universe
    netwas
    deepsea
    sei

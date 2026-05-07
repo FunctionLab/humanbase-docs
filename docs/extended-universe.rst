@@ -1,5 +1,5 @@
 ==================================
-Extended universe (legacy mode)
+Reproducing legacy results
 ==================================
 
 The ``extended_universe`` URL parameter reproduces the cross-organism
@@ -19,6 +19,12 @@ from a publication, figure, or saved link generated between February
 
 What it changes
 ===============
+
+Adding ``extended_universe=true`` reproduces HumanBase's exact
+output for any GIANT Functional Module Detection result generated
+between February 2024 and April 2026. The flag restores both the
+cross-organism annotation universe and the point-probability
+calculation that the platform used at the time.
 
 Term enrichment in :doc:`Functional Module Detection <modules>` uses
 a one-sided Fisher's exact test followed by Benjamini–Hochberg
@@ -40,29 +46,30 @@ cerevisiae*).
 A note on Q values
 ------------------
 
-Functional Module Detection now computes term enrichment Q values using a one-sided
-Fisher's exact test (the upper-tail probability ``hypergeom.sf(k - 1)``),
-as described in Krishnan et al. (2016) Genome-wide prediction and
-functional characterization of the genetic basis of autism spectrum
-disorder. *Nature Neuroscience*. From November 2017 through
-April 2026, the calculation instead used the point probability of
-observing exactly the seen overlap (``hypergeom.pmf(k)``).
+``extended_universe=true`` restores the point-probability
+calculation (``hypergeom.pmf(k)``) that Functional Module Detection
+used from November 2017 through April 2026, alongside the
+cross-organism universe.
 
-``extended_universe=true`` restores the point-probability calculation
-along with the cross-organism universe, so any result produced between
-February 2024 and April 2026 can be reproduced exactly. Results from
-before February 2024 will have matching test statistics, but term-size
-and universe definitions will differ from what this flag restores. If
-you need to reproduce a result from before February 2024, please get
-in touch and we will help you recover matching values.
+The current default uses a one-sided Fisher's exact test based on
+the upper-tail probability ``hypergeom.sf(k - 1)``, as described in
+Krishnan et al. (2016) Genome-wide prediction and functional
+characterization of the genetic basis of autism spectrum
+disorder. *Nature Neuroscience*.
 
-A note on data versioning
--------------------------
+Results from before February 2024 will have matching test
+statistics, but term-size and universe definitions will differ from
+what this flag restores. If you need to reproduce a result from
+before February 2024, please get in touch and we will help you
+recover matching values.
+
+A note on knowledge base versioning
+-----------------------------------
 
 The ``extended_universe`` flag restores the legacy *code path*, but
-it cannot, on its own, restore the legacy *data state*. HumanBase
-imports gene records and term annotations from external sources
-(NCBI, Gene Ontology, MSigDB, MeSH, and others) on its own
+it cannot, on its own, restore the legacy *knowledge base state*.
+HumanBase imports gene records and term annotations from external
+sources (NCBI, Gene Ontology, MSigDB, MeSH, and others) on its own
 schedule. Two quantities used by the hypergeometric test drift
 between releases independently of any term-release version label:
 
@@ -71,16 +78,16 @@ between releases independently of any term-release version label:
 * each **term size (K)** — the number of distinct genes annotated
   to a given term.
 
-In practice this means a community page rerun today with
-``extended_universe=true`` will reproduce the exact statistical
+In practice this means a Functional Module Detection rerun today
+with ``extended_universe=true`` will reproduce the exact statistical
 calculation used in the legacy code path, but the inputs M and K
-reflect today's annotation tables, not the tables present at the
-time of the original run. Q values shift in proportion to how much
-the underlying data has drifted since.
+reflect the current annotation tables, not the tables present at
+the time of the user's original run. Q values shift in proportion
+to how much the underlying knowledge base has drifted since.
 
-This is a known limitation. Long-term reproducibility is on the
-roadmap, achieved by pinning gene and term snapshots per HumanBase
-release so the data state itself is versioned.
+The current versions of HumanBase's gene records and annotation
+sources are listed on the Data sources page, under the Resources
+menu in the site header.
 
 Where it applies
 ================
