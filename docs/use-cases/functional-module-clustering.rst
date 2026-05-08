@@ -40,5 +40,5 @@ The second use case is from a Biongenetic commercial renal panel to screen for p
    :width: 600px
 
 
-* The resulting modules detected in the nephron network are more kidney-specific than the global network, even though there are more genes assigned to a module in the global network. The global network captures general modules spanning developmental biology and organ morphogenesis, while the kidney network covers kidney physiology, system-level regulation, and kidney development.
+* The resulting modules detected in the kidney network are more relevant to kidney function than the global network, even though there are more genes assigned to a module in the global network. The global network captures general modules spanning developmental biology and organ morphogenesis, while the kidney network covers kidney physiology, system-level regulation, and kidney development.
 
