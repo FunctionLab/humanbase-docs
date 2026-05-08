@@ -26,7 +26,7 @@ The second use case is from a Biongenetic commercial renal panel to screen for p
 **Task: How can I determine specific processes and phenotypes that these disease genes participate in, and how do these genes differ in function in the global vs. relevant tissue network?**
 
 
-* Select the “Modules” analysis. Input genes of interest (504 genes). Select the desired network (nephron). Select “Search.”
+* Select the “Modules” analysis. Input genes of interest (504 genes). Select the desired network (kidney). Select “Search.”
 
 .. figure:: ../img/use-cases/functional-module-3.png
    :align: center
