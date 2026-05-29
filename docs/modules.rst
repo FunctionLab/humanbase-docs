@@ -24,5 +24,5 @@ We use a dynamic :code:`k = min(50, 0.2 * |V|)` to obtain the shared-nearest-nei
 
 Resulting modules are then tested for functional enrichment using genes annotated to Gene Ontology biological process terms. GIANT networks use annotations from UniProt-GOA (experimental evidence codes), while MAGE networks use annotations from NCBI gene2go (all evidence codes including computationally inferred). Enrichment is also performed against Disease Ontology and MSigDB gene sets. Representative processes and pathways enriched within each cluster are presented alongside of the cluster with their resulting Q value. The Q value of each term associated to the modules is calculated using one-sided Fisher's exact tests and Benjamini-Hochberg corrections to correct for multiple tests.
 
-To reproduce the term-enrichment values shown by HumanBase between February 2024 and April 2026 (e.g. for results cited in a publication or saved link), see :doc:`Reproducing legacy results <extended-universe>`.
+To reproduce the GO term-enrichment values shown by FMD in HumanBase between February 2024 and May 2026 (e.g. for results cited in a publication or saved link), see :doc:`Reproducing legacy results <reproducibility>`.
 

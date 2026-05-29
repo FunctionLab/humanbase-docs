@@ -66,4 +66,4 @@ Examination of the genes whose expression was significantly upregulated at 2 h a
 Reproducing legacy results
 --------------------------
 
-The annotated term tables on GIANT gene pages (Process and Tissue tabs) used a cross-organism annotation universe between February 2024 and April 2026. To reproduce values shown during that window, see :doc:`Reproducing legacy results <extended-universe>`.
+The table of GO Enriched functions on GIANT network pages used a larger set of genes and annotations, including non-human relevant, between February 2024 and May 2026. To reproduce values shown during that window, see :doc:`Reproducing legacy results <reproducibility>`.
